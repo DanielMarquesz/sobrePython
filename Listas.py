@@ -46,6 +46,133 @@ else:
 lista.extend([658,67])
 print(lista)
 
+# Podemos inserir um novo elemento na lista informando a posição do índice
+# Não substitui nenhum valor
+lista1.insert(3 ,'Novo valor')
+print(lista1)
+
+# Podemos Facilmente Juntar duas listas
+lista6 = (lista1 + lista2)
+print(lista6)
+
+# Mostra o tamanho(elementos) de Uma lista
+print(len(lista1))
+
+# Remove e retorna o último elemento
+print(lista1)
+lista1.pop()
+print(lista1)
+
+# Podemos remover um elemento de uma lista através da sua posição
+lista2.pop(1)
+print(lista2)
+
+# Podemos Inverter uma lista
+lista1.reverse()
+lista2.reverse()
+
+print(lista2)
+print(lista1)
+
+# Removento todos os elementos de uma lista
+
+print(lista5)
+lista5.clear()
+print(lista5)
+
+# Transformando uma string em lista
+
+# Exemplo 1
+
+nome = 'Daniel da Conceição Marques'
+nome = nome.split()
+print(nome)
+
+# Exemplo 2
+
+doce = 'bananada'
+doce = doce.split('a')
+print(doce)
+
+
+# Transformando uma string em lista
+
+# Exemplo 1
+
+nome = 'Daniel da Conceição Marques'
+nome = nome.split()
+print(nome)
+
+# Exemplo 2
+
+doce = 'bananada'
+doce = doce.split('a')
+print(doce)
+
+# Transformando uma lista em string
+
+do = ''.join(doce)
+print(do)
+
+# Iterando sobre listas
+
+#Exemplo 1 - Utilizando For
+soma = ''
+for elemento in lista2:
+    print(elemento)
+    soma = soma + elemento
+print('Total:', soma)
+
+#Exemplo 2 - Utilizando o While
+
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print('Digite um produto para adicionar a lista ou digite "sair" para sair')
+    produto = input()
+
+    if produto != 'sair':
+        carrinho.append(produto)
+
+
+for produto in carrinho:
+    print(produto)
+
+
+# loop para acessar as cores em um vetor
+
+cores = ["amarelo","azul","verde","laranja"]
+#Ex:1
+for cor in cores:
+    print(cor)
+
+#Ex:2
+indice = 0
+while indice < len(cores):
+    print(cores[indice])
+    indice = indice + 1
+
+
+# Gerando índice em um vetor
+
+cores = ['azul','amarelo','vermelho','preto']
+
+for indice, cor in enumerate(cores):
+    indice = indice + 1
+    print(indice, cor)
+
+# Encontrar o índice de um elemento na lista
+
+numeros = [5, 6, 7, 8, 6, 9, 10]
+
+print('Em qual número da linha está o valor 6? ')
+print(numeros.index(6))
+
+print('Em qual número da linha está o valor 10? ')
+print(numeros.index(10))
+
+
 '''
 lista1 = [1,88,54,323,54,87,60]
 
@@ -56,19 +183,4 @@ lista3 = []
 lista4 = [list(range(11))]
 
 lista5 = [list('Daniel Marques')]
-
-# Podemos inserir um novo elemento na lista informando a posição do índice
-# Não substitui nenhum valor
-
-#lista1.insert(3 ,'Novo valor')
-#print(lista1)
-
-# Podemos Facilmente Juntar duas listas
-lista6 = (lista1 + lista2)
-print(lista6)
-
-
-print(lista1.sort())
-
-
 
