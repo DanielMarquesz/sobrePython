@@ -172,6 +172,59 @@ print(numeros.index(6))
 print('Em qual número da linha está o valor 10? ')
 print(numeros.index(10))
 
+# Revisão de Slicing
+
+# lista[inicio:fim:passo]
+# range[inicio:fim:passo]
+
+# Como funciona o parâmetro Início
+lista = [1,2,3,4,6,8]
+print(lista[2:])
+
+# Como funciona o parâmetro FIM
+
+print(lista[:5])
+
+
+# Invertendo Valores de Uma Lista
+
+nome = ['Daniel','Marques']
+
+nome[0], nome[1] = nome[1], nome[0]
+
+print(nome)
+nome.reverse()
+print(nome)
+
+# Soma*, maximo*, mínimo*, tamanho
+
+# só funciona com números inteiros ou reais
+
+lista =[1,2,3,4,5,6]
+
+print(sum(lista))
+print(max(lista))
+print(min(lista))
+print(len(lista))
+
+# Transformar uma lista em Tupla
+
+lista = [1,2,3,4,5,6]
+print(lista)
+print(type(lista))
+
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
+
+# Desempacotamento de listas
+
+lista = [1,2,3]
+num1, num2, num3 = lista
+
+print(num1)
+print(num2)
+print(num3)
 
 '''
 lista1 = [1,88,54,323,54,87,60]
@@ -184,3 +237,35 @@ lista4 = [list(range(11))]
 
 lista5 = [list('Daniel Marques')]
 
+# Copiando uma lista para outra (Shalow Copy e Deep Copy)
+
+# Veja que quando realizamos a cópia da lista, geramos uma nova, totalmente independente. Ou seja, ela não interfere
+# na original, isso em python é chamado de Deep Copy.
+
+# Forma 1 - Deep Copy
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy()
+
+print(nova)
+
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Forma 2 - Shalow Copy
+
+# Faz a cópia utilizando método de atribuição, e o que for alterado na nova lista copiada,
+# altera o valor também na lista original.
+
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista #cópia
+
+nova.append(4)
+
+print(nova)
+print(lista)
