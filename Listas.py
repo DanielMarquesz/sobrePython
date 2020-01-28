@@ -153,6 +153,7 @@ while indice < len(cores):
     print(cores[indice])
     indice = indice + 1
 
+# https://www.geeksforgeeks.org/enumerate-in-python/
 
 # Gerando índice em um vetor
 
