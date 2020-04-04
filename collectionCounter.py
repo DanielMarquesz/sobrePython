@@ -28,8 +28,6 @@ from collections import Counter
 
 print(Counter('Daniel da Conceição'))
 
-'''
-
 # Exemplo 3
 
 from collections import Counter
@@ -45,5 +43,18 @@ texto = "But I must explain to you how all this mistaken idea of denouncing plea
         " or one who avoids a pain that produces no resultant pleasure?"
 
 palavras = texto.split()
-print(Counter(palavras))
+#print(Counter(palavras))
 # imprime cada palavra e quantidade de vezes que essa se repete em toda a String
+
+# Econtrando as N palavras mais comuns
+palavras = Counter(palavras)
+print(palavras.most_common(10))
+
+'''
+from collections import Counter
+
+dicionario = {'br':'Brasil','rb':'Robalo','sp':'São Paulo','rb':'Rio bonito','rb':'Brasil'}
+
+dic = Counter(dicionario)
+print(Counter(dicionario))
+print(dic.most_common())
