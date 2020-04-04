@@ -13,6 +13,7 @@ nome = list('Daniel Marques')
 
 lista = [ 10, 10 ,230 ,210, 23]
 vetor = list('Daniel Marques')
+
 #print(lista[4])
 #print(lista[5])
 #print(pedro)

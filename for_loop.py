@@ -27,14 +27,20 @@ qnt = int(input("Quantas repetições? "))
 for i in range (1, qnt+1):
     print(f"Repetição N° {i}")
 
-
-"""
-
-
-qnt = int(input('Quantas Vezes esse Loop deve Rodar?'))
+    qnt = int(input('Quantas Vezes esse Loop deve Rodar?'))
 soma = 0
 
 for i in range (1, qnt + 1):
     num = int(input(f'Insira o valor {i}/{qnt}: '))
     soma = num + soma
 print(soma,end='')
+
+
+
+"""
+
+
+qnt = int(input("Quantas repetições? "))
+
+for i in range (1, qnt+1):
+    print(f"Repetição N° {i}")
