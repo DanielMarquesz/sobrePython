@@ -187,7 +187,6 @@ print(lista[2:])
 
 print(lista[:5])
 
-
 # Invertendo Valores de Uma Lista
 
 nome = ['Daniel','Marques']

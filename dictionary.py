@@ -53,3 +53,8 @@ localidades = {
     (25.6745, 19.4565): 'Escritório em São Paulo'
 }
 print(localidades)
+lista = []
+teste = 'oi'
+for i in range(2):
+    lista.append(teste)
+print(lista)
