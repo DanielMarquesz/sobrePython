@@ -36,11 +36,17 @@ for i in range (1, qnt + 1):
 print(soma,end='')
 
 
-
-"""
-
-
 qnt = int(input("Quantas repetições? "))
 
 for i in range (1, qnt+1):
     print(f"Repetição N° {i}")
+
+"""
+
+# Loop com posições já inseridas
+
+pessoas = ['Pedro','Thiago','João','Barquinho']
+n = 0
+for i in range(len(pessoas)):
+    print(f'O sujeito {i} está na posição: {pessoas[i]}')
+    n += 1
