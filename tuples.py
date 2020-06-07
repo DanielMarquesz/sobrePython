@@ -29,7 +29,7 @@ print(type(tupla2))
 
 # Ex2:
 
-tupla3 = (1)  # Tuplas são definidas pelo uso de vírdulas,ao invés de parenteses
+tupla3 = (1)  # Tuplas são definidas pelo uso de vírgulas,ao invés de parenteses
 print(tupla3)
 
 print(type(tupla3))
